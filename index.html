@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham Solanki | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #0078d4;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .navigation {
+            margin-top: 20px;
+        }
+
+        .navigation button {
+            background: #fff;
+            color: #0078d4;
+            border: 2px solid #0078d4;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navigation button:hover {
+            background: #0078d4;
+            color: #fff;
+        }
+
+        .skills, .projects, .contact {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .skills h2, .projects h2, .contact h2 {
+            margin-bottom: 10px;
+            color: #0078d4;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li {
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .projects ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .projects ul li {
+            background: #0078d4;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            font-size: 1.1em;
+            transition: transform 0.3s ease;
+        }
+
+        .projects ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .projects ul li:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact {
+            background: #f9f9f9;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .skills ul, .projects ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .projects ul li {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm Soham Solanki</h1>
+        <p>Welcome to my portfolio! Here, I showcase my skills and projects.</p>
+        <div class="navigation">
+            <button onclick="document.getElementById('skills').scrollIntoView()">My Skills</button>
+            <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+        </div>
+    </header>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li><a href="https://github.com/SohamSolanki19/PRODIGY_WD_05" target="_blank">Weather App</a></li>
+            <li><a href ="https://github.com/SohamSolanki19/PRODIGY_WD_03" target="_blank">Tic Tac Toe</a></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:1soham1904@gmail.com">1soham1904@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/soham-solanki-b45518256/" target="_blank">https://www.linkedin.com/in/soham-solanki-b45518256/</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Soham Solanki. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
